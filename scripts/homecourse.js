@@ -109,3 +109,66 @@ const courses = [
         completed: false
     }
 ]
+
+//const wdd = courses.filter(course => course.subject === "WDD");
+//const wddDiv = document.getElementById('wdd');
+
+//const wdde = courses.filter(course => course.subject === "CSE");
+//const wddDive = document.getElementById('cse');
+
+//store the selected elements that we are going to use
+const cseButton = document.getElementById('cse');
+const courseList = document.getElementById('courselist');
+
+//filter the course array to show only cse
+cseButton.addEventListener('click', () => {
+    const cSDe = courses.filter(course => course.subject === "CSE");
+    console.log(cSDe);
+
+    courseList.innerHTML = "";
+
+    //show each filtered course in the page
+    cSDe.forEach(course => {
+        const div = document.createElement('div');
+        const dive = document.createElement('dive');
+        div.textContent = course.subject;
+        dive.textContent = course.number;
+
+        courseList.appendChild(div);
+        courseList.appendChild(dive);
+    });
+
+});
+
+
+
+//store the selected elements that we are going to use
+const wddButton = document.getElementById('wdd');
+const coursecla = document.getElementById('courseclass');
+
+//filter the course array to show only cse
+wddButton.addEventListener('click', () => {
+
+    courseList.classList.toggle('hidden');
+    if (courseList.classList.contains('hidden')) return;
+
+
+
+
+    const wdDe = courses.filter(course => course.subject === "WDD");
+    console.log(wdDe);
+
+    coursecla.innerHTML = "";
+
+    //show each filtered course in the page
+    wdDe.forEach(course => {
+        const div = document.createElement('div');
+        const dive = document.createElement('dive');
+        div.textContent = course.subject;
+        dive.textContent = course.number;
+
+        courseList.appendChild(div);
+        courseList.appendChild(dive);
+    });
+
+});
