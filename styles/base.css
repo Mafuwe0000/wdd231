@@ -36,7 +36,7 @@ header span {
 
 /*HAMBURGER NAVIGATION*/
 .hamburger {
-    background-color: none;
+    background-color: white;
     border: none;
     color: blue;
     cursor: pointer;
@@ -182,7 +182,7 @@ button {
 
 .course-card {
     background-color: lightgray;
-    border-radius: 1px solid #ddd;
+    border-radius: 1px #ddd;
     border-radius: 10px;
     padding: 12px 16px;
     margin: 10px 0;
