@@ -117,26 +117,85 @@ const courses = [
 //const wddDive = document.getElementById('cse');
 
 //store the selected elements that we are going to use
+const allButton = document.getElementById('all');
+const allList = document.getElementById('allList');
+
+//filter the course array to show only cse
+allButton.addEventListener('click', () => {
+
+    allList.innerHTML = "";
+
+    //show each filtered course in the page
+    //there could be thousand courses, and the following code states that for eachcourse, take the subject and number and add to a constant created before
+    courses.forEach(course => {
+        const car = document.createElement('div');
+
+
+        car.textContent = `${course.subject} ${course.number}`;
+
+        allList.appendChild(car);
+        car.classList.add('course-card'); //this line of code is just for styling the new element card. carc.classlist.add(new class)
+
+        if (course.completed) {
+            const mark = document.createElement('span');
+            mark.textContent = '✔';
+            mark.style.color = 'green';
+            car.appendChild(mark);
+        }
+
+    });
+
+    const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+
+
+    const creditDv = document.createElement('div');
+    creditDv.textContent = `The total number of course listed below is ${totalCredits}`;
+    allList.appendChild(creditDv);
+
+
+
+});
+
+
+
+
+
 const cseButton = document.getElementById('cse');
 const courseList = document.getElementById('courselist');
 
 //filter the course array to show only cse
 cseButton.addEventListener('click', () => {
     const cSDe = courses.filter(course => course.subject === "CSE");
-    console.log(cSDe);
+
 
     courseList.innerHTML = "";
 
     //show each filtered course in the page
+    //there could be thousand courses, and the following code states that for eachcourse, take the subject and number and add to a constant created before
     cSDe.forEach(course => {
-        const div = document.createElement('div');
-        const dive = document.createElement('dive');
-        div.textContent = course.subject;
-        dive.textContent = course.number;
+        const card = document.createElement('div');
 
-        courseList.appendChild(div);
-        courseList.appendChild(dive);
+
+        card.textContent = `${course.subject} ${course.number}`;
+
+
+
+        courseList.appendChild(card);
+        card.classList.add('course-card'); //this line of code is just for styling the new element card. carc.classlist.add(new class)
+
+        if (course.completed) {
+            const mark = document.createElement('span');
+            mark.textContent = '✔';
+            mark.style.color = 'green';
+            card.appendChild(mark);
+        }
+
     });
+    const totalCredits = cSDe.reduce((sum, course) => sum + course.credits, 0);
+    const creditDve = document.createElement('div');
+    creditDve.textContent = `The total number of course listed below is ${totalCredits}`;
+    courseList.appendChild(creditDve);
+
 
 });
 
@@ -144,31 +203,42 @@ cseButton.addEventListener('click', () => {
 
 //store the selected elements that we are going to use
 const wddButton = document.getElementById('wdd');
-const coursecla = document.getElementById('courseclass');
+const courselista = document.getElementById('courseclass');
 
 //filter the course array to show only cse
 wddButton.addEventListener('click', () => {
-
-    courseList.classList.toggle('hidden');
-    if (courseList.classList.contains('hidden')) return;
-
-
-
-
     const wdDe = courses.filter(course => course.subject === "WDD");
-    console.log(wdDe);
 
-    coursecla.innerHTML = "";
+
+    courselista.innerHTML = "";
+    let totalCredits = 0; //not const becausei want to change later
 
     //show each filtered course in the page
+    //there could be thousand courses, and the following code states that for eachcourse, take the subject and number and add to a constant created before
     wdDe.forEach(course => {
-        const div = document.createElement('div');
-        const dive = document.createElement('dive');
-        div.textContent = course.subject;
-        dive.textContent = course.number;
+        const carta = document.createElement('div');
 
-        courseList.appendChild(div);
-        courseList.appendChild(dive);
+
+        carta.textContent = `${course.subject} ${course.number}`;
+
+
+
+        courselista.appendChild(carta);
+        carta.classList.add('course-card'); //this line of code is just for styling the new element card. carc.classlist.add(new class)
+        totalCredits += course.credits;
+
+        if (course.completed) {
+            const mark = document.createElement('span');
+            mark.textContent = '✔';
+            mark.style.color = 'green';
+            carta.appendChild(mark);
+        }
+
     });
-
+    const totalCredit = wdDe.reduce((sum, course) => sum + course.credits, 0);
+    const creditDiv = document.createElement('div');
+    creditDiv.textContent = `The total number of course listed below is ${totalCredit}`;
+    courselista.appendChild(creditDiv);
 });
+
+
