@@ -25,14 +25,27 @@ navbutton.addEventListener('click', () => {
 
 
 
-const url = 'https://mafuwe0000.github.io/wdd231/chamber/data/members.json';
+const url = '../data/members.json';
 const cards = document.querySelector('#cards');
 
 
 async function getMemberData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displaymembers(data.member);
+    try {
+        //fetc the JSON file
+        const response = await fetch(url);
+        //check if the request was successful
+        if (!response.ok) {
+            throw new Error("HTTP error! status: ${response.status}");
+
+        }
+        //Parse the JSON data
+        const data = await response.json();
+
+        //Display the data
+        displaymembers(data.member);
+    } catch (error) {
+        console.error('Error fetching the JSON file:', error);
+    }
 }
 
 
@@ -60,3 +73,17 @@ const displaymembers = (members) => {
 
 };
 
+/*
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+gridbutton.addEventListener('click', () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}*/

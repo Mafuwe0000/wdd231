@@ -21,7 +21,7 @@ header {
     column-gap: 8px;
 }
 
-header img {
+.logoClass {
     display: block;
     width: 100%;
     height: auto;
@@ -33,6 +33,23 @@ header span {
     color: blue;
 }
 
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    grid-column: 1/4;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+}
 
 /*HAMBURGER NAVIGATION*/
 .hamburger {
@@ -210,7 +227,7 @@ footer {
         align-items: center;
         width: 100%;
         text-align: left;
-        flex: 1;
+
     }
 
 
