@@ -23,6 +23,18 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/homecourse.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+
+    <meta property="og:title" content="Home Chamber">
+    <meta property="og:description"
+        content="Discover the innovative market and businsess and make connections with reliable partners and get expert  support.">
+    <meta property="og:image"
+        content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743" />
+    <meta property="og:url" content="https://www.index.com/">
+
+
 </head>
 
 <body>
@@ -34,13 +46,13 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li> <a href="index.html"> Home </a> </li>
-            <li class="current"> <a href="#">Chamber Project</a></li>
+            <li class="active"> <a href="index.html"> Home </a> </li>
+            <li> <a href="#">Chamber Project</a></li>
             <li><a href="#"> Final Project</a> </li>
         </ul>
 
     </nav>
-    <main>
+    <main class="grid">
         <h1> Home</h1>
         <section class="aboutme">
             <h2> About Me</h2>
@@ -74,16 +86,19 @@
         </section>
         <section class="certificates">
             <h2 class="cert"> Web Certificates Courses</h2>
-            <button id="all"> All</button>
+
+            <button id="all" class="button"> All</button>
             <div id="allList" class="content"></div>
 
 
-            <button id="cse"> CSE</button>
-            <div id="courselist" class="content"></div>
+            <button id="cse" class="button"> CSE</button>
+            <div id="courseList" class="content"></div>
 
 
-            <button id="wdd"> WDD</button>
-            <div id="courseclass" class="content"></div>
+            <button id="wdd" class="button"> WDD</button>
+            <div id="courseClass" class="content"></div>
+
+
 
 
         </section>

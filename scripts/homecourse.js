@@ -120,11 +120,20 @@ const courses = [
 const allButton = document.getElementById('all');
 const allList = document.getElementById('allList');
 
+
+//helper function to hide all contents
+function hideAll() {
+    allList.classList.add("content");
+    courseList.classList.add("content");
+    courseClass.classList.add("content");
+}
+
 //filter the course array to show only cse
 allButton.addEventListener('click', () => {
+    hideAll();
 
     allList.innerHTML = "";
-
+    allList.classList.remove("content");
     //show each filtered course in the page
     //there could be thousand courses, and the following code states that for eachcourse, take the subject and number and add to a constant created before
     courses.forEach(course => {
@@ -161,14 +170,18 @@ allButton.addEventListener('click', () => {
 
 
 const cseButton = document.getElementById('cse');
-const courseList = document.getElementById('courselist');
+const courseList = document.getElementById('courseList');
 
 //filter the course array to show only cse
 cseButton.addEventListener('click', () => {
+
+    hideAll();
+    courseList.innerHTML = "";
+    courseList.classList.remove("content");
     const cSDe = courses.filter(course => course.subject === "CSE");
 
 
-    courseList.innerHTML = "";
+
 
     //show each filtered course in the page
     //there could be thousand courses, and the following code states that for eachcourse, take the subject and number and add to a constant created before
@@ -177,8 +190,6 @@ cseButton.addEventListener('click', () => {
 
 
         card.textContent = `${course.subject} ${course.number}`;
-
-
 
         courseList.appendChild(card);
         card.classList.add('course-card'); //this line of code is just for styling the new element card. carc.classlist.add(new class)
@@ -203,15 +214,21 @@ cseButton.addEventListener('click', () => {
 
 //store the selected elements that we are going to use
 const wddButton = document.getElementById('wdd');
-const courselista = document.getElementById('courseclass');
+const courselista = document.getElementById('courseClass');
 
 //filter the course array to show only cse
 wddButton.addEventListener('click', () => {
+    hideAll();
+
+    courselista.innerHTML = "";
+
+    courseClass.classList.remove("content");
+
     const wdDe = courses.filter(course => course.subject === "WDD");
 
 
-    courselista.innerHTML = "";
-    let totalCredits = 0; //not const becausei want to change later
+
+    let totalCredits = 0; //not const because i want to change later
 
     //show each filtered course in the page
     //there could be thousand courses, and the following code states that for eachcourse, take the subject and number and add to a constant created before
@@ -220,8 +237,6 @@ wddButton.addEventListener('click', () => {
 
 
         carta.textContent = `${course.subject} ${course.number}`;
-
-
 
         courselista.appendChild(carta);
         carta.classList.add('course-card'); //this line of code is just for styling the new element card. carc.classlist.add(new class)

@@ -1,0 +1,18 @@
+{
+    "familyName": "Samo",
+    "date_moved": "2025-10-2",
+    "numberOfpeople": 4,
+    "visitedBishopric": true,
+    "individual": [
+        {
+            "name": "Mafuwe",
+            "gender": "male",
+            "birthdate": 2
+        },
+        {
+            "name": "Vanilda",
+            "gender": "female",
+            "birthdate": "1999-2-12"
+        }
+    ]
+}
