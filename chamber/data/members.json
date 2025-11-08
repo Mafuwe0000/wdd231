@@ -1,58 +1,60 @@
-[
-    {
-        "name": "Aurora Tech Solutions",
-        "address": "125 Innovation Blvd, San Francisco, CA 94107",
-        "phone": "(415) 555-0198",
-        "website": "https://www.auroratechsolutions.com",
-        "image": "aurora_logo.png",
-        "membershipLevel": 3
-    },
-    {
-        "name": "GreenLeaf Organics",
-        "address": "980 Elm Street, Portland, OR 97205",
-        "phone": "(503) 555-0142",
-        "website": "https://www.greenleaforganics.co",
-        "image": "greenleaf_icon.jpg",
-        "membershipLevel": 2
-    },
-    {
-        "name": "Summit Financial Group",
-        "address": "401 Market Plaza, Denver, CO 80202",
-        "phone": "(303) 555-0164",
-        "website": "https://www.summitfin.com",
-        "image": "summit_logo.svg",
-        "membershipLevel": 1
-    },
-    {
-        "name": "BlueWave Digital Media",
-        "address": "77 Ocean Drive, Miami, FL 33139",
-        "phone": "(305) 555-0192",
-        "website": "https://www.bluewavedigital.io",
-        "image": "bluewave_icon.png",
-        "membershipLevel": 3
-    },
-    {
-        "name": "Crimson Peak Construction",
-        "address": "2100 Ridgeway Rd, Dallas, TX 75201",
-        "phone": "(214) 555-0183",
-        "website": "https://www.crimsonpeakbuilds.com",
-        "image": "crimsonpeak_logo.jpg",
-        "membershipLevel": 2
-    },
-    {
-        "name": "Silverline Consulting",
-        "address": "15 Union Square, New York, NY 10003",
-        "phone": "(212) 555-0119",
-        "website": "https://www.silverlineconsulting.com",
-        "image": "silverline_icon.png",
-        "membershipLevel": 1
-    },
-    {
-        "name": "EchoStream Analytics",
-        "address": "500 Tech Park Ave, Seattle, WA 98109",
-        "phone": "(206) 555-0177",
-        "website": "https://www.echostreamanalytics.ai",
-        "image": "echostream_logo.svg",
-        "membershipLevel": 3
-    }
-]
+{
+    "members": [
+        {
+            "name": "Aurora Tech Solutions",
+            "address": "125 Innovation Blvd, San Francisco, CA 94107",
+            "phone": "(415) 555-0198",
+            "website": "https://www.auroratechsolutions.com",
+            "image": "aurora_logo.png",
+            "membershipLevel": 3
+        },
+        {
+            "name": "GreenLeaf Organics",
+            "address": "980 Elm Street, Portland, OR 97205",
+            "phone": "(503) 555-0142",
+            "website": "https://www.greenleaforganics.co",
+            "image": "greenleaf_icon.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Summit Financial Group",
+            "address": "401 Market Plaza, Denver, CO 80202",
+            "phone": "(303) 555-0164",
+            "website": "https://www.summitfin.com",
+            "image": "summit_logo.svg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "BlueWave Digital Media",
+            "address": "77 Ocean Drive, Miami, FL 33139",
+            "phone": "(305) 555-0192",
+            "website": "https://www.bluewavedigital.io",
+            "image": "bluewave_icon.png",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Crimson Peak Construction",
+            "address": "2100 Ridgeway Rd, Dallas, TX 75201",
+            "phone": "(214) 555-0183",
+            "website": "https://www.crimsonpeakbuilds.com",
+            "image": "crimsonpeak_logo.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Silverline Consulting",
+            "address": "15 Union Square, New York, NY 10003",
+            "phone": "(212) 555-0119",
+            "website": "https://www.silverlineconsulting.com",
+            "image": "silverline_icon.png",
+            "membershipLevel": 1
+        },
+        {
+            "name": "EchoStream Analytics",
+            "address": "500 Tech Park Ave, Seattle, WA 98109",
+            "phone": "(206) 555-0177",
+            "website": "https://www.echostreamanalytics.ai",
+            "image": "echostream_logo.svg",
+            "membershipLevel": 3
+        }
+    ]
+}

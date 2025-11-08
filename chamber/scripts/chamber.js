@@ -25,15 +25,21 @@ navbutton.addEventListener('click', () => {
 
 
 
-
+const url = 'https://mafuwe0000.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
 
+async function getMemberData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displaymembers(data.member);
+}
 
 
-getData();
 
-function displaymembers(members) {
+getMemberData();
+
+const displaymembers = (members) => {
     members.forEach(member => {
         let card = document.createElement('section');
         let fullName = document.createElement('h2');
@@ -54,17 +60,3 @@ function displaymembers(members) {
 
 };
 
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-gridbutton.addEventListener('click', () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
-}
