@@ -175,8 +175,8 @@ footer {
 }
 
 img {
-    width: auto;
-    height: 75px;
+    width: 100%;
+    height: auto;
     border: 1px solid #fff;
     box-shadow: 0 0 1rem #555;
 }
@@ -184,14 +184,16 @@ img {
 .list {
     display: flex;
     flex-direction: column;
-    & > * {
-			margin: 0 1rem;
-		}
 
-		img, p {
-			display: none;
-		}
-        
+    &>* {
+        margin: 0 1rem;
+    }
+
+    img,
+    p {
+        display: none;
+    }
+
 }
 
 
