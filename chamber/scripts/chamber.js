@@ -25,7 +25,7 @@ navbutton.addEventListener('click', () => {
 
 
 
-const url = '../data/members.json';
+const url = `./data/members.json`;
 const cards = document.querySelector('#cards');
 
 
@@ -35,14 +35,14 @@ async function getMemberData() {
         const response = await fetch(url);
         //check if the request was successful
         if (!response.ok) {
-            throw new Error("HTTP error! status: ${response.status}");
+            throw new Error(`HTTP error! status: ${response.status}`);
 
         }
         //Parse the JSON data
         const data = await response.json();
 
         //Display the data
-        displaymembers(data.member);
+        displaymembers(data.members);
     } catch (error) {
         console.error('Error fetching the JSON file:', error);
     }
@@ -58,22 +58,34 @@ const displaymembers = (members) => {
         let fullName = document.createElement('h2');
         let phoneNumber = document.createElement('p');
         let address = document.createElement('p');
+        let web = document.createElement('p');
+        let membership = document.createElement('p');
+        let img = document.createElement('img');
+        img.src = member.image;
+
 
         fullName.textContent = `Company: ${member.name}`;
-        phoneNumber.textContent = `Phone Number: ${element.phone}`;
-        address.textContent = `Address: ${element.address}`;
+        phoneNumber.textContent = `Phone Number: ${member.phone}`;
+        address.textContent = `Address: ${member.address}`;
+        web.textContent = `Website: ${member.website}`;
+        membership.textContent = `Membership Level: ${member.membershipLevel}`;
+
 
 
 
         card.appendChild(fullName);
         card.appendChild(phoneNumber);
         card.appendChild(address);
+        card.appendChild(web);
+        card.appendChild(img);
+        card.appendChild(membership);
+        card.classList.add('member-card');
         cards.appendChild(card);
     });
 
 };
 
-/*
+
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
@@ -82,8 +94,9 @@ gridbutton.addEventListener('click', () => {
     display.classList.add("grid");
     display.classList.remove("list");
 });
+listbutton.addEventListener("click", showList);
 
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
-}*/
+}
