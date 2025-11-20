@@ -221,6 +221,7 @@ const displaymembers = (members) => {
         let membership = document.createElement('p');
         let img = document.createElement('img');
         img.src = member.image;
+        img.alt = member.name;
 
 
         fullName.textContent = `Company: ${member.name}`;

@@ -89,24 +89,24 @@ header span {
 .navigation a {
 
     padding: .8rem 10px;
-    color: lightcoral;
+    color: black;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
 
 
 nav a:hover {
-    background-color: blue;
+    color: white;
+    background-color: black;
 }
 
 nav .active {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 256, 0.8);
 }
 
 h1 {
     margin-left: 10px;
 }
-
 
 
 
