@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
 
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
@@ -45,20 +45,81 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li> <a href="index.html"> Home </a> </li>
-            <li class="active"> <a href="directory.html"> Directory</a></li>
+            <li class="active"> <a href="index.html"> Home </a> </li>
+            <li> <a href="directory.html"> Directory</a></li>
             <li><a href="#"> Join</a> </li>
             <li><a href="#"> Discover</a> </li>
         </ul>
 
     </nav>
     <img src="images/maputohero.png" alt="view of maputo" class="hero">
-    <main>
-        <h1> Members of The Chamber</h1>
-        <button id="grid">Grid</button>
-        <button id="list">List</button>
+    <main class="main">
 
+
+
+        <section id="event" class="event">
+            <h2>Events</h2>
+            <h3>Silverline Consulting Joins the Commerce Chamber</h3>
+            <p>The Commerce Chamber proudly welcomed Silverline Consulting as its newest member during a recent
+                networking event. The company, known for its expertise in strategic business development and
+                organizational solutions, was introduced to fellow chamber members and local business leaders.
+
+                During the event, chamber representatives highlighted the value Silverline Consulting brings to the
+                business community, emphasizing its commitment to innovation, collaboration, and economic growth.
+                Silverline's leadership expressed enthusiasm about joining the chamber and shared their intention to
+                participate actively in upcoming initiatives, community projects, and business roundtables.</p>
+        </section>
+        <section id="weather" class="weather">
+            <h2> Current Weather</h2>
+
+            <figure>
+                <img id="weather-icon" src="" alt="">
+
+            </figure>
+            <span id="current-temp"></span>
+            <figcaption></figcaption>
+            <p> High: <span id="high"></span></p>
+            <p> Low: <span id="low">Low:</span></p>
+            <p> Humidity: <span id="humidity"> </span></p>
+            <p> Sunrise: <span id="sunrise"></span></p>
+            <p> Sunset: <span id="sunset"> </span></p>
+
+        </section>
+
+        <section id="forecastEvent" class="forecastEvent">
+            <h2>Forecast </h2>
+
+            <p> Today:
+            <section id="forecast" class="forecast"></section>
+            </p>
+            <p> Tomorrow:
+            <section id="forecastTomorrow" class="forecastTomorrow"></section>
+            </p>
+            <p> After tomorrow
+            <section id="forecastAfterTomorrow" class="forecastAfterTomorrow"></section>
+            </p>
+        </section>
+
+        <section id="spotlights" class="spotlights"></section>
         <article id="cards" class="grid"></article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
     <footer class="lastFooter">

@@ -158,10 +158,7 @@ footer {
 
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
-    align-items: center;
+    display: block;
 
 }
 
@@ -197,9 +194,26 @@ img {
 }
 
 
+#weather-icon {
+    width: 55px;
+    height: 55px;
+}
 
+.weather {
+    align-items: end;
+}
 
+.event {
+    text-align: justify;
+}
 
+h2 {
+    background-color: lightgrey;
+}
+
+.grid h2 {
+    background-color: transparent;
+}
 
 @media screen and (min-width: 38rem) {
 
@@ -248,5 +262,28 @@ img {
 
     }
 
+    .footerChamber h2 {
+        background-color: transparent;
+    }
 
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 15px;
+    }
+
+    article {
+        grid-column: 1 / -1;
+        /* spans entire row */
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+
+    }
 }
