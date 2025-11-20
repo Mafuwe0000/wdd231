@@ -79,7 +79,7 @@ function displayResults(data) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+    captionDesc.textContent = desc;
 
     let high = data.main.temp_max;
     let low = data.main.temp_min;
@@ -116,7 +116,7 @@ function displayResults(data) {
     //Format to 12-hour with AM/PM
     let hours21 = hour % 12 || 12; //convert 0-23 to 1-12
     let amp = hour >= 12 ? 'PM' : 'AM';
-    const formattedTime = `${hours21}:${minutes.toString().padStart(2, '0')} ${amp}`;
+    const formattedTime = `${hours21}:${minut.toString().padStart(2, '0')} ${amp}`;
     //document.getElementById('sunrise').textContent = `Sunrise ${formattedTime12}`;
 
     capSset.textContent = `${formattedTime}`;
