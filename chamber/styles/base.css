@@ -108,6 +108,9 @@ h1 {
     margin-left: 10px;
 }
 
+#home {
+    grid-column: 1/4;
+}
 
 
 /*******************FOOTER******************/
