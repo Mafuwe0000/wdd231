@@ -215,6 +215,17 @@ h2 {
     background-color: transparent;
 }
 
+ul {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 38rem) {
 
     header,
