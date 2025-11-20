@@ -220,8 +220,10 @@ const displaymembers = (members) => {
         let web = document.createElement('p');
         let membership = document.createElement('p');
         let img = document.createElement('img');
+
         img.src = member.image;
-        img.alt = member.name;
+        img.alt = `${member.name} logo`;
+
 
 
         fullName.textContent = `Company: ${member.name}`;
