@@ -101,7 +101,7 @@ nav a:hover {
 }
 
 nav .active {
-    background-color: rgba(0, 0, 256, 0.8);
+    text-decoration: underline;
 }
 
 h1 {

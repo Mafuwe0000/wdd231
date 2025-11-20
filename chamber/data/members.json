@@ -5,7 +5,7 @@
             "address": "125 Innovation Blvd, San Francisco, CA 94107",
             "phone": "(415) 555-0198",
             "website": "https://www.auroratechsolutions.com",
-            "image": "images/aurora.png",
+            "image": "images/aurorawebp.webp",
             "membershipLevel": 3
         },
         {
@@ -13,7 +13,7 @@
             "address": "980 Elm Street, Portland, OR 97205",
             "phone": "(503) 555-0142",
             "website": "https://www.greenleaforganics.co",
-            "image": "images/green.png",
+            "image": "images/greenwebp.webp",
             "membershipLevel": 2
         },
         {
@@ -21,7 +21,7 @@
             "address": "401 Market Plaza, Denver, CO 80202",
             "phone": "(303) 555-0164",
             "website": "https://www.summitfin.com",
-            "image": "images/summit.png",
+            "image": "images/summitwebp.webp",
             "membershipLevel": 1
         },
         {
@@ -29,7 +29,7 @@
             "address": "77 Ocean Drive, Miami, FL 33139",
             "phone": "(305) 555-0192",
             "website": "https://www.bluewavedigital.io",
-            "image": "images/bluewave.png",
+            "image": "images/bluewavewebp.webp",
             "membershipLevel": 3
         },
         {
@@ -37,7 +37,7 @@
             "address": "2100 Ridgeway Rd, Dallas, TX 75201",
             "phone": "(214) 555-0183",
             "website": "https://www.crimsonpeakbuilds.com",
-            "image": "images/crimson.png",
+            "image": "images/crimsonwebp.webp",
             "membershipLevel": 2
         },
         {
@@ -45,7 +45,7 @@
             "address": "15 Union Square, New York, NY 10003",
             "phone": "(212) 555-0119",
             "website": "https://www.silverlineconsulting.com",
-            "image": "images/silver.jpg",
+            "image": "images/silverwebp.webp",
             "membershipLevel": 1
         },
         {
@@ -53,7 +53,7 @@
             "address": "500 Tech Park Ave, Seattle, WA 98109",
             "phone": "(206) 555-0177",
             "website": "https://www.echostreamanalytics.ai",
-            "image": "images/echo.png",
+            "image": "images/echowebp.webp",
             "membershipLevel": 3
         }
     ]
