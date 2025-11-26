@@ -1,6 +1,6 @@
 //https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/
-
-temples = [
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/"
+export const temples = [
     {
         "number": "1",
         "name": "St. George Utah Temple",
@@ -210,6 +210,15 @@ temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+
+    {
+        "number": "168",
+        "name": "Durban South Africa Temple",
+        "dedicated": "February 16, 2020",
+        "person": "Ronald A. Rasband",
+        "path": "durban-south-africa/320x200/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg"
+
     }
 ]
 

@@ -45,62 +45,49 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="active"> <a href="index.html"> Home </a> </li>
+            <li> <a href="index.html"> Home </a> </li>
             <li> <a href="directory.html"> Directory</a></li>
-            <li><a href="join.html"> Join</a> </li>
-            <li><a href="#"> Discover</a> </li>
+            <liclass="active"><a href="join.html"> Join</a> </li>
+                <li><a href="#"> Discover</a> </li>
         </ul>
 
     </nav>
     <img src="images/maputoherowebp.webp" alt="view of maputo" class="hero">
     <main class="main">
-        <h1 id="home"> Home </h1>
+        <h1 id="join"> JOIN US</h1>
+        <form method="GET" action="thanks.html" class="designOne">
+            <label for="fName"> First Name <input type="text" name="first" required autocomplete=" given-name"
+                    title="Your First Name"></label>
+            <label for="lName"> Last Name <input type="text" name="last" required autocomplete="family-name"
+                    title="Your last Name"> </label>
+
+            <label for="organizationalTitle"> Organizational Title <input type="text" name="organizationalTitle"
+                    title="organization-title" required autocomplete="organization-title"> </label>
+            <label for="email"> Email <input type="text" name="email" placeholder="john89@gmail.com" title="Your Email"
+                    required autocomplete="email"> </label>
+            <label for="cellphone">Cell Phone <input type="tel" name="phone" autocomplete="tel"
+                    title="A Phone Number with dashes" placeholder="987-555-1234"></label>
 
 
-        <section id="event" class="event">
-            <h2>Events</h2>
-            <h3>Silverline Consulting Joins the Commerce Chamber</h3>
-            <p>The Commerce Chamber proudly welcomed Silverline Consulting as its newest member during a recent
-                networking event. The company, known for its expertise in strategic business development and
-                organizational solutions, was introduced to fellow chamber members and local business leaders.
+            <label for="businessName"> business/organization's name <input type="text"
+                    name="business/organization's name"> </label>
 
-                During the event, chamber representatives highlighted the value Silverline Consulting brings to the
-                business community, emphasizing its commitment to innovation, collaboration, and economic growth.
-                Silverline's leadership expressed enthusiasm about joining the chamber and shared their intention to
-                participate actively in upcoming initiatives, community projects, and business roundtables.</p>
-        </section>
-        <section id="weather" class="weather">
-            <h2> Current Weather</h2>
+            <label for="membership">Membership Level
+                <select name="membership" required>
+                    <option value="">None</option>
+                    <option value="np">Non Profit</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership </option>
+            </label>
 
+            <label for="description"> Description <input type="area" title="description" name="description"> </label>
 
-            <span id="current-temp"></span>
-            <img id="weather-icon" alt="">
-            <figcaption></figcaption>
-            <p> High: <span id="high"></span></p>
-            <p> Low: <span id="low"></span></p>
-            <p> Humidity: <span id="humidity"> </span></p>
-            <p> Sunrise: <span id="sunrise"></span></p>
-            <p> Sunset: <span id="sunset"> </span></p>
+            <label>Date <input type="date" name="date" required></label>
 
-        </section>
+            <input type="submit" value="join the chamber">
 
-        <section id="forecastEvent" class="forecastEvent">
-            <h2>Forecast </h2>
-
-            <p> Today: <span id="forecast" class="forecast"></span></p>
-            <p> Tomorrow: <span id="forecastTomorrow" class="forecastTomorrow"></span></p>
-            <p> After tomorrow <span id="forecastAfterTomorrow" class="forecastAfterTomorrow"></span> </p>
-        </section>
-
-        <section id="spotlights" class="spotlights"></section>
-        <article id="cards" class="grid"></article>
-
-
-
-
-
-
-
+        </form>
 
 
 
