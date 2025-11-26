@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory of Chamber project</title>
+    <title>Join page of the commerce chamber </title>
 
     <meta name="description"
         content="this assignment works on a chamber of commerce website and shoul meet course standards, be responsive, and pass accessibility.">
@@ -47,29 +47,30 @@
         <ul>
             <li> <a href="index.html"> Home </a> </li>
             <li> <a href="directory.html"> Directory</a></li>
-            <liclass="active"><a href="join.html"> Join</a> </li>
-                <li><a href="#"> Discover</a> </li>
+            <li class="active"><a href="join.html"> Join</a> </li>
+            <li><a href="#"> Discover</a> </li>
         </ul>
 
     </nav>
     <img src="images/maputoherowebp.webp" alt="view of maputo" class="hero">
     <main class="main">
         <h1 id="join"> JOIN US</h1>
-        <form method="GET" action="thanks.html" class="designOne">
-            <label for="fName"> First Name <input type="text" name="first" required autocomplete=" given-name"
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label for="fName"> First Name <input id="fName" name="first" required autocomplete="given-name"
                     title="Your First Name"></label>
-            <label for="lName"> Last Name <input type="text" name="last" required autocomplete="family-name"
+            <label for="lName"> Last Name <input id="lName" name="last" required autocomplete="family-name"
                     title="Your last Name"> </label>
 
-            <label for="organizationalTitle"> Organizational Title <input type="text" name="organizationalTitle"
-                    title="organization-title" required autocomplete="organization-title"> </label>
-            <label for="email"> Email <input type="text" name="email" placeholder="john89@gmail.com" title="Your Email"
-                    required autocomplete="email"> </label>
-            <label for="cellphone">Cell Phone <input type="tel" name="phone" autocomplete="tel"
-                    title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+            <label for="organizationalTitle"> Organizational Title <input id="organizationalTitle" type="text"
+                    name="organizationalTitle" title="organization-title" required autocomplete="organization-title">
+            </label>
+            <label for="email"> Email <input id="email" type="email" name="email" placeholder="john89@gmail.com"
+                    title="Your Email" required autocomplete="email"> </label>
+            <label for="cellphone">Cell Phone <input id="cellphone" type="tel" name="phone" autocomplete="tel"
+                    title="A Phone Number with dashes" placeholder="987-555-1234" required></label>
 
 
-            <label for="businessName"> business/organization's name <input type="text"
+            <label for="businessName"> business/organization's name <input id="businessName" type="textarea"
                     name="business/organization's name"> </label>
 
             <label for="membership">Membership Level
@@ -81,9 +82,11 @@
                     <option value="gold">Gold Membership </option>
             </label>
 
-            <label for="description"> Description <input type="area" title="description" name="description"> </label>
+            <label for="description"> Description <textarea id="description" title="description"
+                    name="description"> </textarea>
+            </label>
 
-            <label>Date <input type="date" name="date" required></label>
+            <label>Date <input id="date" name="date" required></label>
 
             <input type="submit" value="join the chamber">
 
