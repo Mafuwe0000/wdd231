@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+#openButton,
+#closeButton {
+    background-color: yellow;
+}
+
+#dialogBox {
+    background-color: beige;
+}
+
+::backdrop {
+    background-color: rgba(255, 128, 0, 0.5);
+}

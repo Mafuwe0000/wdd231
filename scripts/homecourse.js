@@ -14,21 +14,6 @@ document.getElementById('lastModified').textContent = lastModified;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //This array contains the course information for the required courses that are in the first certificate called Web and Computer Programming of the Software Development degree.
 const courses = [
     {
@@ -256,4 +241,25 @@ wddButton.addEventListener('click', () => {
     courselista.appendChild(creditDiv);
 });
 
+
+
+
+
+function displayModal(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
 
