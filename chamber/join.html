@@ -56,12 +56,12 @@
     <main class="main">
         <h1 id="join"> JOIN US</h1>
         <form method="GET" action="thankyou.html" class="designOne">
-            <label for="fName"> First Name <input id="fName" name="first" required autocomplete="given-name"
+            <label for="fName"> First Name <input type="text" id="fName" name="first" autocomplete="given-name" required
                     title="Your First Name"></label>
-            <label for="lName"> Last Name <input id="lName" name="last" required autocomplete="family-name"
+            <label for="lName"> Last Name <input type="text" id="lName" name="last" autocomplete="family-name" required
                     title="Your last Name"> </label>
 
-            <label for="organizationalTitle"> Organizational Title <input id="organizationalTitle" type="text"
+            <label for="organizationalTitle"> Organizational Title <input type="text" id="organizationalTitle"
                     name="organizationalTitle" title="organization-title" required autocomplete="organization-title">
             </label>
             <label for="email"> Email <input id="email" type="email" name="email" placeholder="john89@gmail.com"
@@ -70,11 +70,11 @@
                     title="A Phone Number with dashes" placeholder="987-555-1234" required></label>
 
 
-            <label for="businessName"> business/organization's name <input id="businessName" type="textarea"
-                    name="business/organization's name"> </label>
+            <label for="businessName"> Business/organization's name <input id="businessName" type="text"
+                    name="business/organization's name" autocomplete="organization"> </label>
 
-            <label for="membership">Membership Level
-                <select name="membership" required>
+            <label for="membership"> Membership Level
+                <select id="membership" name="membership" required>
                     <option value="">None</option>
                     <option value="np">Non Profit</option>
                     <option value="bronze">Bronze Membership</option>
@@ -82,9 +82,9 @@
                     <option value="gold">Gold Membership </option>
             </label>
 
-            <label for="description"> Description <textarea id="description" title="description"
-                    name="description"> </textarea>
-            </label>
+            <label for="description"> Description </label>
+            <textarea id="description" title="description" name="description" rows="30" cols="10"> </textarea>
+
 
             <label>Date <input id="date" name="date" required></label>
 
