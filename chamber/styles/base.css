@@ -184,17 +184,18 @@ img {
 .list {
     display: flex;
     flex-direction: column;
-
-    >* {
-        margin: 0 1rem;
-    }
-
-    img,
-    p {
-        display: none;
-    }
-
 }
+
+.list>* {
+    margin: 0 1rem;
+}
+
+.list img,
+.list p {
+    display: none;
+}
+
+
 
 
 #weather-icon {
