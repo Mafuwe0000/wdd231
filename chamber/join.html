@@ -62,7 +62,8 @@
                     title="Your last Name"> </label>
 
             <label for="organizationalTitle"> Organizational Title <input type="text" id="organizationalTitle"
-                    name="organizationalTitle" title="organization-title" required autocomplete="organization-title">
+                    name="organizationalTitle" title="organization-title" required autocomplete="organization-title"
+                    pattern="[A-Za-z0-9\s]{2,50}" placeholder="Enter organizational title">
             </label>
             <label for="email"> Email <input id="email" type="email" name="email" placeholder="john89@gmail.com"
                     title="Your Email" required autocomplete="email"> </label>
@@ -71,7 +72,8 @@
 
 
             <label for="businessName"> Business/organization's name <input id="businessName" type="text"
-                    name="business/organization's name" autocomplete="organization"> </label>
+                    name="business/organization's name" title="businessName" autocomplete="organization" required>
+            </label>
 
             <label for="membership"> Membership Level
                 <select id="membership" name="membership" required>
@@ -79,11 +81,11 @@
                     <option value="np">Non Profit</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership </option>
-            </label>
+                    <option value="gold">Gold Membership </option> </label>
 
-            <label for="description"> Description </label>
-            <textarea id="description" title="description" name="description" rows="30" cols="10"> </textarea>
+
+            <textarea id="description" title="description" name="description" rows="30"
+                cols="10"> Description </textarea>
 
 
             <label>Date <input id="date" name="date" required></label>
