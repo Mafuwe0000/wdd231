@@ -4,6 +4,11 @@ const currentYear = new Date().getFullYear();
 document.getElementById('currentyear').textContent = currentYear;
 
 
+const now = new Date();
+const formatted = now.toISOString();
+document.getElementById('timestamp').value = formatted;
+
+
 //this property in JavaScript gets the date when the doc was last modified;
 //and we insert into a constant
 const lastModified = document.lastModified;
