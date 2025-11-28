@@ -56,47 +56,45 @@
     <main class="main">
         <h1 id="join"> JOIN US</h1>
         <form method="GET" action="thankyou.html" class="designOne">
-            <label for="fName"> First Name </label>
+            <label for="fName">First Name</label>
             <input type="text" id="fName" name="first" autocomplete="given-name" required title="Your First Name">
 
-            <label for="lName"> Last Name </label>
-            <input type="text" id="lName" name="last" autocomplete="family-name" required title="Your last Name">
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName" name="last" autocomplete="family-name" required title="Your Last Name">
 
-            <label for="organizationalTitle"> Organizational Title </label>
+            <label for="organizationalTitle">Organizational Title</label>
             <input type="text" id="organizationalTitle" name="organizationalTitle" title="organization-title" required
                 autocomplete="organization-title" pattern="[A-Za-z0-9\s]{2,50}"
                 placeholder="Enter organizational title">
 
-            <label for="email"> Email </label>
+            <label for="email">Email</label>
             <input id="email" type="email" name="email" placeholder="john89@gmail.com" title="Your Email" required
                 autocomplete="email">
-            <label for="cellphone">Cell Phone </label>
+
+            <label for="cellphone">Cell Phone</label>
             <input id="cellphone" type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
                 placeholder="987-555-1234" required>
 
-
-            <label for="businessName"> Business/organization's name</label>
+            <label for="businessName">Business/Organization's Name</label>
             <input id="businessName" type="text" name="businessName" title="businessName" autocomplete="organization"
                 required>
 
-
-            <label for="membership"> Membership Level </label>
+            <label for="membership">Membership Level</label>
             <select id="membership" name="membership" required>
                 <option value="">None</option>
                 <option value="np">Non Profit</option>
                 <option value="bronze">Bronze Membership</option>
                 <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership </option>
+                <option value="gold">Gold Membership</option>
             </select>
 
-            <label for="description"> Description</label>
-            <textarea id="description" title="description" name="description" rows="10" cols="30"> </textarea>
+            <label for="description">Description</label>
+            <textarea id="description" title="description" name="description" rows="30" cols="10">Description</textarea>
 
-
-            <label for="date">Date </label>
+            <label for="date">Date</label>
             <input type="date" id="date" name="date" required>
 
-            <input type="submit" value="join the chamber">
+            <input type="submit" value="Join the Chamber">
 
         </form>
 
