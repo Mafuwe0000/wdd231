@@ -251,3 +251,79 @@ const displaymembers = (members) => {
     });
 
 };
+
+
+const openButton = document.querySelector("#openButton");
+const dialogBox = document.querySelector("#dialogBox");
+const closeButton = document.querySelector("#closeButton");
+const dialogBoxText = document.querySelector("#dialogBox div");
+//"show the dialog box" when the button is clicked
+openButton0.addEventListener('click', () => {
+    dialogBox.showModal();
+    dialogBoxText.innerHTML = `Benefits include everything, plus:
+
+Featured placement on the homepage or special highlights in newsletters
+
+Invitations to VIP or exclusive networking events with sponsors and donors
+
+Personalized support for fundraising campaigns or donor outreach
+
+Complimentary registration for premium training programs or certification workshops
+
+Recognition as a leading nonprofit supporter in community initiatives`
+});
+
+
+openButton1.addEventListener('click', () => {
+    dialogBox.showModal();
+    dialogBoxText.innerHTML = `Entry-level membership, ideal for smaller organizations or those starting out.
+
+Benefits include:
+
+Access to general networking events
+
+Listing in the online member directory
+
+Participation in basic training workshops
+
+Discounts on selected events`
+});
+
+openButton2.addEventListener('click', () => {
+    dialogBox.showModal();
+    dialogBoxText.innerHTML = `Mid-level membership for organizations seeking more visibility and engagement.
+
+Benefits include everything in Bronze, plus:
+
+Priority registration for special events
+
+Spotlight advertising on the member page
+
+Access to advanced training sessions or workshops
+
+Additional event discounts
+
+Inclusion in social media promotion campaigns`
+});
+
+openButton3.addEventListener('click', () => {
+    dialogBox.showModal();
+    dialogBoxText.innerHTML = `Premium-level membership, offering the highest level of exposure and exclusive opportunities.
+
+Benefits include everything in Silver, plus:
+
+Featured placement on the home page or newsletter highlights
+
+Invitations to VIP networking events
+
+Personalized marketing opportunities (e.g., event sponsorships, targeted advertising)
+
+Complimentary or heavily discounted access to premium training sessions
+
+Recognition as a top-tier supporter of the organization`
+});
+
+//"close the dialog box" when the button is clicked
+closeButton.addEventListener('click', () => {
+    dialogBox.close();
+});

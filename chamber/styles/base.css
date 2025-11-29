@@ -224,8 +224,18 @@ ul {
 }
 
 
+.memberChoice button {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    margin: 25px;
+    background-color: lightblue;
+}
 
-
+#closeButton {
+    width: 100%;
+    height: 100%;
+}
 
 
 

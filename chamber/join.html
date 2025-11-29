@@ -55,61 +55,76 @@
     </nav>
     <img src="images/maputoherowebp.webp" alt="view of maputo" class="hero">
     <main class="main">
-        <h1 id="join"> JOIN US</h1>
-        <form method="GET" action="thankyou.html" class="designOne">
-            <label>First Name
-                <input type="text" id="fName" name="first" autocomplete="given-name" required title="Your First Name">
-            </label>
 
-            <label>Last Name
-                <input type="text" id="lName" name="last" autocomplete="family-name" required title="Your Last Name">
-            </label>
+        <section>
+            <h1> JOIN US- Fill the membership application form</h1>
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name
+                    <input type="text" id="fName" name="first" autocomplete="given-name" required
+                        title="Your First Name">
+                </label>
 
-            <label>Organizational Title
-                <input type="text" id="organizationalTitle" name="organizationalTitle" title="organization-title"
-                    required autocomplete="organization-title" pattern="[A-Za-z0-9\s-]{7,50}"
-                    placeholder="Enter organizational title">
-            </label>
+                <label>Last Name
+                    <input type="text" id="lName" name="last" autocomplete="family-name" required
+                        title="Your Last Name">
+                </label>
 
-            <label>Email
-                <input id="email" type="email" name="email" placeholder="john89@gmail.com" title="Your Email" required
-                    autocomplete="email">
-            </label>
+                <label>Organizational Title
+                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="organization-title"
+                        required autocomplete="organization-title" pattern="[A-Za-z0-9\s-]{7,50}"
+                        placeholder="Enter organizational title">
+                </label>
 
-            <label>Cell Phone
-                <input id="cellphone" type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
-                    placeholder="987-555-1234" required>
-            </label>
+                <label>Email
+                    <input id="email" type="email" name="email" placeholder="john89@gmail.com" title="Your Email"
+                        required autocomplete="email">
+                </label>
 
-            <label>Business/Organization's Name
-                <input id="businessName" type="text" name="businessName" title="businessName"
-                    autocomplete="organization" required>
-            </label>
+                <label>Cell Phone
+                    <input id="cellphone" type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="987-555-1234" required>
+                </label>
 
-            <label>Membership Level
-                <select id="membership" name="membership" required>
-                    <option value="">None</option>
-                    <option value="np">Non Profit</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
+                <label>Business/Organization's Name
+                    <input id="businessName" type="text" name="businessName" title="businessName"
+                        autocomplete="organization" required>
+                </label>
 
-            <label>Description
-                <textarea id="description" title="description" name="description" rows="30"
-                    cols="10">Description</textarea>
-            </label>
+                <label>Membership Level
+                    <select id="membership" name="membership" required>
+                        <option value="">None</option>
+                        <option value="np">Non Profit</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
 
-            
-                <input type="hidden" id="timestamp" name="timestamp" value="" >
-            
-
-            <input type="submit" value="Join the Chamber">
-
-        </form>
+                <label>Description
+                    <textarea id="description" title="description" name="description" rows="10" cols="25"></textarea>
+                </label>
 
 
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+
+                <input type="submit" value="Join the Chamber">
+
+            </form>
+        </section>
+
+
+        <section class="memberChoice">
+            <h1>Membership Levels</h1>
+            <button id="openButton0">Non Profit Membership Level</button>
+            <button id="openButton1"> Bronze Membership Level</button>
+            <button id="openButton2"> Silver Membership Level</button>
+            <button id="openButton3"> Gold Membership Level </button>
+            <dialog id="dialogBox">
+                <div id="" class="paragraph"></div>
+                <button id="closeButton">Close Button</button>
+            </dialog>
+        </section>
 
 
 
