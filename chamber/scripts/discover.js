@@ -39,15 +39,19 @@ const displaymaputo = (items) => {
         let address = document.createElement('p');
         let description = document.createElement('p');
         let img = document.createElement('img');
-        let openButton = document.createElement('button');
 
-        let box = document.createElement('dialog');
-        let boxContent = document.createElement('div');
-        let closeButton = document.createElement('button');
 
 
         img.src = member.image;
         img.alt = `${member.title} logo`;
+
+
+        let openButton = document.createElement('button');
+
+        let dialogBox = document.createElement('dialog');
+        let boxContent = document.createElement('div');
+
+        let closeButton = document.createElement('button');
 
         title.textContent = member.name;
         address.textContent = `Address: ${member.address.city}`;
@@ -61,19 +65,21 @@ const displaymaputo = (items) => {
         openButton.classList.add("open-button");
         closeButton.textContent = "Close button";
         closeButton.classList.add("close-button");
+        card.appendChild(openButton);
+
+        boxContent.textContent = `Hint :${member.role}`;
+        dialogBox.appendChild(boxContent);
+        dialogBox.appendChild(closeButton);
+        card.append(dialogBox);
 
 
-        box.appendChild(boxContent);
-        box.appendChild(closeButton);
-        document.body.appendChild(box);
 
-        card.appendChild(box);
 
         openButton.addEventListener('click', () => {
-            box.showModal();
+            dialogBox.showModal();
         })
         closeButton.addEventListener('click', () => {
-            box.close();
+            dialogBox.close();
         })
 
         card.classList.add('member-card');
