@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory of Chamber project</title>
+    <title>Discover Maputo, the host of the commerce chamber </title>
 
     <meta name="description"
         content="this assignment works on a chamber of commerce website and shoul meet course standards, be responsive, and pass accessibility.">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
 
-    <script src="scripts/chamber.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
@@ -30,8 +30,9 @@
     <meta property="og:title" content="Home Chamber">
     <meta property="og:description"
         content="Discover the innovative market and businsess and make connections with reliable partners and get expert support.">
-    <meta property="og:image" content="images/" />
-    <meta property="og:url" content="https://www.index.com/">
+    <meta property="og:image" content="images/maputohero.svg" />
+    <meta property="og:url"
+        content="https://mafuwe0000.github.io/wdd231/chamber/images/overview-region-maputo-general.jpeg">
 
 
 </head>
@@ -46,19 +47,18 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li> <a href="index.html"> Home </a> </li>
-            <li class="active"> <a href="directory.html"> Directory</a></li>
+            <li> <a href="directory.html"> Directory</a></li>
             <li><a href="join.html"> Join</a> </li>
-            <li><a href="discover.html"> Discover</a> </li>
+            <li class="active"><a href="discover.html"> Discover</a> </li>
         </ul>
 
     </nav>
-    <img src="images/maputohero.png" alt="view of maputo" class="hero">
-    <main>
-        <h1> Members of The Chamber</h1>
-        <button id="grid">Grid</button>
-        <button id="list">List</button>
+    <img src="images/maputoherowebp.webp" alt="view of maputo" class="hero">
+    <main >
+        <h1 class="discover">Discover Maputo Here</h1>
+        <div id="cartas" class="grid"></div>
 
-        <article id="cards" class="grid"></article>
+
 
     </main>
     <footer class="lastFooter">

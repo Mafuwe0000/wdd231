@@ -327,3 +327,49 @@ Recognition as a top-tier supporter of the organization`
 closeButton.addEventListener('click', () => {
     dialogBox.close();
 });
+
+
+
+import { maputo } from "../data/maputo.mjs";
+
+
+
+
+
+const cartas = document.querySelector('cartas');
+
+const displaymaputo = (items) => {
+
+    items.forEach(member => {
+        let card = document.createElement('section');
+        let title = document.createElement('h2');
+        let address = document.createElement('p');
+        let description = document.createElement('p');
+
+
+        let img = document.createElement('img');
+
+        img.src = member.image;
+        img.alt = `${member.title} logo`;
+
+
+
+        title.textContent = ` ${member.name}`;
+        address.textContent = `Address: ${member.address.street}`;
+        description.textContent = `${member.description}`;
+
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(address);
+        card.appendChild(description);
+
+
+        card.classList.add('member-card');
+        cartas.appendChild(card);
+    });
+
+};
+
+
+displaymaputo(maputo);
+

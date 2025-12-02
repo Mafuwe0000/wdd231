@@ -304,6 +304,10 @@ ul {
         width: 100%;
     }
 
+    .discover {
+        grid-template-columns: 1/4;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
