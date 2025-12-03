@@ -91,3 +91,31 @@ const displaymaputo = (items) => {
 
 // Display data
 displaymaputo(maputo);
+
+
+const messageBox = document.getElementById("visitMessage");
+
+//get the lst visit from localStorage
+let lastVisit = localStorage.getItem("lastVisit");
+
+//get current time
+const now = Date.now();
+
+if (lastVisit) {
+    //convert string to number
+    lastVisit = Number(lastVisit);
+
+    //calculate time difference in days
+    const differenceMs = now - lastVisit;
+    const differenceDays = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
+
+    //display message
+    messageBox.textContent = `Welcome back! Your last visit was ${differenceDays} day(s) ago.`;
+}
+else {
+    //first time visiting
+    messageBox.textContent = "Welcome! This is your first visit.";
+}
+
+//save the current date for next visit
+localStorage.setItem("lastVisit", now)
