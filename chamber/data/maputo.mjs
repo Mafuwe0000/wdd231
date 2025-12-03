@@ -63,7 +63,7 @@ export const maputo = [
       "country": "Mozambique"
     },
     "description": "Maputo’s downtown and historic urban center combine colonial-era buildings, diverse architecture, cultural venues, and vibrant social life — offering a cosmopolitan and heritage-rich environment attractive to residents, investors and visitors.",
-    "image": "./images/images/historical.webp",
+    "image": "./images/images/dance.webp",
     "role": "A landmark of Maputo’s architectural heritage and a focal point for cultural activity."
   },
   {
@@ -89,7 +89,7 @@ export const maputo = [
       "country": "Mozambique"
     },
     "description": "The central bank of Mozambique, headquartered in downtown Maputo. It oversees monetary policy, financial regulation, and national economic stability. Its headquarters is also a well-known landmark building in the capital’s financial district.",
-    "image": "./images/images/economichub.webp",
+    "image": "./images/images/banco.webp",
     "role": "Replaced the 1960s building with new, modern, secure facilities for banking, archives, and administrative operations."
   }
 ];
