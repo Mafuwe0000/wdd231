@@ -1,0 +1,16 @@
+@media screen and (min-width: 64rem) {
+
+    #cartas {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+
+
+    }
+
+    .member-card {
+        margin: 15px;
+        border: 10px;
+    }
+}

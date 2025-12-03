@@ -158,13 +158,6 @@ footer {
     background-color: #ddd;
 }
 
-
-
-.grid {
-    display: block;
-
-}
-
 .member-card {
     margin: 1rem 8px;
     border: 1px solid #999;
@@ -208,56 +201,6 @@ img {
     box-shadow: 0 0 1rem #555;
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.list>* {
-    margin: 0 1rem;
-}
-
-.list img,
-.list p {
-    display: none;
-}
-
-
-
-
-#weather-icon {
-    width: 55px;
-    height: 55px;
-}
-
-.weather {
-    align-items: end;
-}
-
-.event {
-    text-align: justify;
-}
-
-h2 {
-    background-color: lightgrey;
-}
-
-.grid h2 {
-    background-color: transparent;
-}
-
-ul {
-    list-style: none;
-}
-
-
-.memberChoice button {
-    display: block;
-    width: 100%;
-    padding: 25px;
-    margin: 25px;
-    background-color: lightblue;
-}
 
 #closeButton {
     width: 100%;
@@ -319,28 +262,8 @@ ul {
     }
 
 
-    .main {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 15px;
-    }
-
-    article {
-        grid-column: 1 / -1;
-        /* spans entire row */
-        width: 100%;
-    }
-
     .discover {
         grid-template-columns: 1/4;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 5px;
-        align-items: center;
-
     }
 
     .member-card {

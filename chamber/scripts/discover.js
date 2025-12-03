@@ -36,7 +36,7 @@ const displaymaputo = (items) => {
     items.forEach(member => {
         let card = document.createElement('section');
         let title = document.createElement('h2');
-        let address = document.createElement('p');
+        let address = document.createElement('h3');
         let description = document.createElement('p');
         let img = document.createElement('img');
 
