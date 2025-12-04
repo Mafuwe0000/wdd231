@@ -1,0 +1,90 @@
+/*     COLOR SCHEME         */
+/*blue
+red
+yellow
+*/
+
+/*            sitename*/
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    text-align: justify;
+    gap: 15px;
+}
+
+#home {
+    grid-template-columns: 1/4;
+}
+
+p {
+    text-decoration: underline;
+}
+
+.wireframe {
+    display: block;
+}
+
+/*******************FOOTER******************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 24px;
+
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+/***********MAIN***************/
+.grid {
+    display: block;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: lightgray;
+}

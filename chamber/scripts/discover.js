@@ -110,11 +110,11 @@ if (lastVisit) {
     const differenceDays = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
 
     //display message
-    messageBox.textContent = `Welcome back! Your last visit was ${differenceDays} day(s) ago.`;
+    messageBox.textContent = `You last visited  ${differenceDays} day(s) ago.`;
 }
 else {
     //first time visiting
-    messageBox.textContent = "Welcome! This is your first visit.";
+    messageBox.textContent = "Welcome! Let us know if you have any questions.";
 }
 
 //save the current date for next visit
