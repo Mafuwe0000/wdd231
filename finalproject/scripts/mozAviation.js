@@ -100,16 +100,6 @@ const displayAccidents = (items) => {
 
 displayAccidents(mozambiqueAccidents);
 
-const form = document.getElementById("myForm");
-
-form.addEventListener("submit", function (event) {
-    event.preventDefault(); //to stop the form from submitting normally
-
-    //show a confirmation message
-    alert("Thank you for enriching our database")
-    form.reset();
-})
-
 
 
 
