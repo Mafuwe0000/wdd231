@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozambique Aviation Library</title>
+
+    <meta name="description"
+        content="this assignment works on a chamber of commerce website and shoul meet course standards, be responsive, and pass accessibility.">
+    <meta name="author" content=" mafuwe-samo">
+
+    <!--in here goes the font for the page-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!--Style sheets go herer-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script type="module" src="scripts/mozAviation.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+
+    <meta property="og:title" content="Home Chamber">
+    <meta property="og:description"
+        content="Discover the innovative market and businsess and make connections with reliable partners and get expert support.">
+    <meta property="og:image" content="images/maputohero.svg" />
+    <meta property="og:url" content="https://www.index.com/">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/mozambiqueAviationLibrary.svg" alt="site logo" width="512" height="512" class="logoClass">
+        <span> Mozambique Aviation Library</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active"> <a href="index.html"> Home </a> </li>
+            <li> <a href="aviationData.html"> Accident Data Base</a></li>
+            <li><a href="military.html"> Military aviation</a> </li>
+        </ul>
+
+    </nav>
+    <img src="images/detaHero.webp" alt="detaHero" class="hero">
+    <main class="mainPage">
+        <h1 id="home"> Home </h1>
+
+        <section id="event" class="event">
+            <h2>Aviation in Mozambique</h2>
+            <p>Aviation in Mozambique developed gradually from the early 20th century, shaped by colonial
+                infrastructure,
+                regional needs, and post-independence nation-building. Here’s a clear, structured overview:</p>
+            <ul>
+                <li>Early Beginnings (1920s–1930s)</li>
+                <li>World War II Era (1940s)</li>
+                <li>Creation of National Airline (1930s–1940s)</li>
+                <li>Post-Independence Era (1975 onward)</li>
+                <li>Modern Developments (1990s–Present)</li>
+            </ul>
+        </section>
+        <section id="weather" class="weather">
+            <h2> Early Beginnings (1920s–1930s)</h2>
+
+
+            <p>During the Portuguese colonial period, Mozambique began developing basic air routes to connect remote
+                regions.
+
+                The first recorded flights were military and exploratory, mainly linking coastal areas like Lourenço
+                Marques (now Maputo) with inland territories.
+
+                In the 1930s, Mozambique began appearing on the long-distance air routes used by European airlines
+                flying to South Africa and India.</p>
+
+        </section>
+
+        <section id="forecastEvent" class="forecastEvent">
+            <h2>World War II Era (1940s) </h2>
+
+            <p>Mozambique’s geographic position made it a strategic waypoint for Allied flights.
+
+                This led to improvements in landing strips and navigational facilities.
+
+                Airports like Maputo and Beira grew in importance as regional stopovers.</p>
+        </section>
+        <section id="forecastEvent" class="forecastEvent">
+            <h2>Creation of National Airline (1930s–1940s) </h2>
+
+            <p>DETA – Direcção de Exploração dos Transportes Aéreos was founded in 1936 by the Portuguese colonial
+                administration.
+
+                DETA was one of Africa’s earliest airlines and operated domestic routes within Mozambique.
+
+                It later expanded to international destinations.</p>
+        </section>
+        <section id="forecastEvent" class="forecastEvent">
+            <h2>Post-Independence Era (1975 onward) </h2>
+
+            <p>After independence in 1975, DETA was restructured and renamed LAM – Linhas Aéreas de Moçambique in 1980.
+
+                LAM became Mozambique’s national flag carrier.
+
+                Mozambique invested in airports and aviation services as part of nation-building.</p>
+        </section>
+
+        <section id="forecastEvent" class="forecastEvent">
+            <h2>Modern Developments (1990s–Present) </h2>
+
+            <p>Expansion and modernization of major airports:
+
+                Maputo International Airport
+
+                Beira Airport
+
+                Nampula Airport
+
+                Privatization and deregulation allowed new airlines and cargo operators to enter the market.
+
+                Improvements in safety standards and international partnerships helped integrate Mozambique into
+                regional aviation networks</p>
+        </section>
+
+
+        <section>
+            <h1> Do You Know more about Mozambique Aviation?</h1>
+            <h4>Tell us and enrich our database:</h4>
+            <form method="GET" class="designOne">
+                <label>First Name
+                    <input type="text" id="fName" name="first" autocomplete="given-name" required
+                        title="Your First Name">
+                </label>
+
+                <label>Last Name
+                    <input type="text" id="lName" name="last" autocomplete="family-name" required
+                        title="Your Last Name">
+                </label>
+
+
+                <label>Email
+                    <input id="email" type="email" name="email" placeholder="john89@gmail.com" title="Your Email"
+                        required autocomplete="email">
+                </label>
+
+            </form>
+            <form method="GET" class="designOne" id="myForm">
+                <label>Description
+                    <textarea id="description" title="description" name="description" rows="10" cols="45"
+                        required></textarea>
+                </label>
+
+                <input type="submit" value="Add more information">
+
+            </form>
+        </section>
+
+
+        <div id="visitMessage"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="lastFooter">
+        <div class="footerChamber">
+            <h2>
+                Mozambique Aviation Library
+            </h2>
+            <ul>
+
+                <li>
+                    Alameda do Aeroporto
+                </li>
+                <li>
+                    Maputo, Matola
+                </li>
+                <li>
+                    info@MozambiqueAviationLibrary.org
+                </li>
+                <li>
+                    +273 02739862969
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="social">
+            <a href="www.linkedin.com/in/mafuwe-manuel-combucane-samo-aa8903205" target="_blank"><img
+                    src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://github.com/Mafuwe0000/" target="_blank"><img src="images/github.svg" alt="github"
+                    width="16" height="16"></a>
+            <a href="https://www.instagram.com/mafuwe_samo/" target="_blank"><img src="images/instagram.svg"
+                    alt="instagram" width="16" height="16"></a>
+            <a href="https://www.threads.com/@mafuwe_samo" target="_blank"><img src="images/threads-fill.svg"
+                    alt="threads" width="16" height="16"></a>
+
+        </div>
+        <div class="wddFooter">
+            <p> WDD231 Final Project</p>
+            <p>Mafuwe Manuel </p>
+            <p><span id="currentyear"></span> &copy; Mozambique Aviation Library</p>
+            <p>Last Modification:<span id="lastModified"></span></p>
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
