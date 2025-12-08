@@ -99,7 +99,7 @@ export const mozambiqueAccidents = [
     "location": "São Sebastião, Nampula, Mozambique",
     "fatalities": 2,
     "summary": "On takeoff from São Sebastião with only 265 m of runway used, the King Air failed to become airborne, overran the runway and struck a sandbank, fence and trees before erupting in fire. The aircraft had been fully fueled earlier in Polokwane. Both crew were killed.",
-    "image": "https://example.com/images/2004_kingair_zsnrw_saosebastiao.jpg"
+    "image": "images/kingairbeechcraft.webp"
   },
   {
     "date": "2000-02-08",
@@ -108,7 +108,7 @@ export const mozambiqueAccidents = [
     "location": "Maputo City District, Mozambique",
     "fatalities": 1,
     "summary": "Shortly after takeoff from Maputo Airport, the aircraft lost height and crashed into houses in the 25th June district. All 18 occupants survived, but one person on the ground was killed.",
-    "image": "https://example.com/images/2000_emb110_c9auh_maputo.jpg"
+    "image": "images/embraer110p2.webp"
   },
   {
     "date": "2006-06-30",
@@ -117,7 +117,7 @@ export const mozambiqueAccidents = [
     "location": "Vilanculos, Inhambane, Mozambique",
     "fatalities": 1,
     "summary": "The aircraft, inbound from Polokwane on a charter flight, struck palm trees on night approach to Vilanculos Airport and crashed 2 km short of the runway. All three occupants were severely injured; one pilot died later from injuries.",
-    "image": "https://example.com/images/2006_caravan_zspog_vilanculos.jpg"
+    "image": "images/c208.webp"
   },
   {
     "date": "1992-06-10",
@@ -126,7 +126,7 @@ export const mozambiqueAccidents = [
     "location": "Marromeu Airport, Mozambique",
     "fatalities": 0,
     "summary": "During landing on a food-relief flight from Beira, the aircraft overran the runway and broke into three sections. All five occupants survived, but the aircraft was destroyed.",
-    "image": "https://example.com/images/1992_an32_cccp48058_marromeu.jpg"
+    "image": "images/antonov.webp"
   },
   {
     "date": "1985-05-15",
@@ -135,7 +135,7 @@ export const mozambiqueAccidents = [
     "location": "Chongoene, Mozambique",
     "fatalities": 5,
     "summary": "The aircraft crashed while attempting an emergency landing on a beach. All five occupants were killed and the aircraft was destroyed.",
-    "image": "https://example.com/images/1985_bn2_c9amv_chongoene.jpg"
+    "image": "images/brittennorman.webp"
   },
   {
     "date": "1984-11-03",
@@ -144,15 +144,15 @@ export const mozambiqueAccidents = [
     "location": "Tete-Matundo Airport, Mozambique",
     "fatalities": 0,
     "summary": "The aircraft crashed on approach to Tete-Matundo Airport. All eight occupants survived, but the aircraft was destroyed and written off.",
-    "image": "https://example.com/images/1984_bn2t_c9tai_tete.jpg"
+    "image": "images/brittennorman.webp"
   }, {
-    "date": "1979-04-15",
-    "aircraft": "Britten-Norman BN-2A-8 Islander (C9-APQ)",
-    "operator": "COMAG - Companhia Moçambicana de Aviação Geral",
-    "location": "Songo Airport, Mozambique",
+    "date": "2024-01-18",
+    "aircraft": "Embraer 135 (ZS-SJX)",
+    "operator": "South African Airlink",
+    "location": "Pemba Airport, Mozambique",
     "fatalities": 0,
-    "summary": "While en route on a return trip to Tete, the aircraft was struck by a surface-to-air missile at 4,700 ft, destroying the right engine and setting the wing on fire. The pilot performed an emergency descent and executed a flapless landing at Songo. The aircraft burned but all five occupants survived.",
-    "image": "https://example.com/images/1979_bn2_c9apq_songo.jpg"
+    "summary": "While approaching to land on a return, the aircraft veered off the runway.",
+    "image": "images/airlink.webp"
   }
 
 

@@ -413,3 +413,21 @@ input[type=submit] {
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
 }
+
+
+.before,
+.fapm,
+.civilWar,
+.postWar,
+.modernization,
+.home {
+    text-align: justify;
+}
+
+.division,
+.modernplanes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+    align-items: center;
+}
